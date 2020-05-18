@@ -2,7 +2,7 @@ defmodule Rumbl.Repo.Migrations.CreateUser do
   use Ecto.Migration
 
   def change do
-    create Table(:users) do
+    create table(:users) do
       add :name, :string
       add :username, :string, null: false
       add :password_hash, :string
